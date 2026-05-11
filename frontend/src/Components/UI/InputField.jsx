@@ -18,10 +18,10 @@ const InputField = ({
       <div
         className={clsx(
           "input-wrapper",
-          type === "textarea" && "textarea-wrapper"
+          type === "textarea" && "textarea-wrapper",
         )}
       >
-        <img src={inputImg} className="input-field-img" />
+        <img src={inputImg} className="input-field-img" alt="" />
         {type === "date" ? (
           <CustomDatePicker name={name} date={value} onDateChange={onChange} />
         ) : type === "textarea" ? (
