@@ -66,12 +66,15 @@ const TaskMain = () => {
   }, []);
 
   //delete
-  const handleResponse = useCallback((responseData) => {
-    if (responseData.success) {
-      fetchAllTasks(); // refresh task list
-      showTasklist();
-    }
-  });
+  const handleResponse = useCallback(
+    (responseData) => {
+      if (responseData.success) {
+        fetchAllTasks(); // refresh task list
+        showTasklist();
+      }
+    },
+    [fetchAllTasks, showTasklist],
+  );
 
   /* =========================
      FETCH ALL TASKS
