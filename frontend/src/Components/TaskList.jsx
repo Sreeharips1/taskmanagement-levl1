@@ -25,7 +25,7 @@ const TaskList = ({
             className="add-task-btn cursor-pointer"
             onClick={showCreateTaskScreen}
           >
-            <img src={FolderImg} />
+            <img src={FolderImg} alt="" />
             Add New Task
           </button>
         </div>

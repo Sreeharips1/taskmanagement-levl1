@@ -9,14 +9,14 @@ const TaskCard = ({ task, onClick, deleteTask, Showedit }) => {
   return (
     <div className="task-tile-container cursor-pointer" onClick={onClick}>
       <span className="task-text-wrapper">
-        <img src={CheckedBlue} className="task-icon" />
+        <img src={CheckedBlue} className="task-icon" alt="" />
       </span>
       <div className="task-text-wrapper">
         <p className="task-primary-text"> {task.title}</p>
         <p className="task-secondary-text">{task.description}</p>
       </div>
       <div className="action-items-container">
-        <img src={AlarmClock} />
+        <img src={AlarmClock} alt="" />
         <p> {moment(task.due_date).format("DD MMM YYYY")}</p>
       </div>
       <div
@@ -24,13 +24,13 @@ const TaskCard = ({ task, onClick, deleteTask, Showedit }) => {
         onClick={(e) => e.stopPropagation(Showedit(task))}
         task={task}
       >
-        <img src={Edit} />
+        <img src={Edit} alt="" />
       </div>
       <div
         className="delete-container cursor-pointer"
         onClick={(e) => e.stopPropagation(deleteTask(task._id))}
       >
-        <img src={Delete} />
+        <img src={Delete} alt="" />
       </div>
     </div>
   );

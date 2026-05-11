@@ -80,7 +80,7 @@ const CreateTask = ({ showTaskListScreen, fetchAllTasks }) => {
   return (
     <div className="content-section create-task-section">
       <div className="create-task-card">
-        <img src={UserIcon} width={263} />
+        <img src={UserIcon} width={263} alt="" />
         <h1 className="craete-task-title-text">Create New Task</h1>
         <InputField
           name="new-task-title"

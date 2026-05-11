@@ -76,7 +76,7 @@ const EditTask = ({ task, showTaskListScreen, fetchAllTasks }) => {
     <div>
       <div className="content-section create-task-section">
         <div className="create-task-card">
-          <img src={UserIcon} width={263} />
+          <img src={UserIcon} width={263} alt="" />
           <h1 className="craete-task-title-text">Edit Task</h1>
           <InputField
             name="new-task-title"
