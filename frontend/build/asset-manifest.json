@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6df888c0.css",
+    "main.js": "/static/js/main.665d398c.js",
+    "static/media/user-icon.png": "/static/media/user-icon.a419aaca4b45b5ac6e87.png",
+    "static/media/title-placeholder-img.svg": "/static/media/title-placeholder-img.477b8c0af4582756d04cb8fa7c257ca9.svg",
+    "static/media/alarm-clock.svg": "/static/media/alarm-clock.d33b64c8cb67633ab0ac2a6a8010d75f.svg",
+    "static/media/memo.svg": "/static/media/memo.2fcd696a27cb49347933e098beaa5695.svg",
+    "static/media/blue-checked.svg": "/static/media/blue-checked.66b50753ec72784e43974e84e98467cf.svg",
+    "static/media/delete.svg": "/static/media/delete.af7c2b1be4a842151aa8938cf191c566.svg",
+    "static/media/folder-white.svg": "/static/media/folder-white.db7086111466ad063a9a21bf442db8cc.svg",
+    "static/media/calendar.svg": "/static/media/calendar.d7c378cb4fa2a4e086d6a672cc33121a.svg",
+    "static/media/edit.svg": "/static/media/edit.1bc806aa3da9a218e6d37c0e593ba132.svg",
+    "index.html": "/index.html",
+    "static/media/cross-icon.svg": "/static/media/cross-icon.d99f03a5f737f4bddaf3f25da799dc8f.svg",
+    "main.6df888c0.css.map": "/static/css/main.6df888c0.css.map",
+    "main.665d398c.js.map": "/static/js/main.665d398c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6df888c0.css",
+    "static/js/main.665d398c.js"
+  ]
+}
