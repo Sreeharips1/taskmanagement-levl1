@@ -25,11 +25,15 @@ const EditTask = ({ task, showTaskListScreen, fetchAllTasks }) => {
   }, [task]);
 
   // handle
-  const handletitle = useCallback((event) => settaskTitle(event.target.value));
-  const handledescription = useCallback((event) =>
-    settaskDescription(event.target.value),
+  const handletitle = useCallback(
+    (event) => settaskTitle(event.target.value),
+    [],
   );
-  const handleDuedate = useCallback((date) => settaskDue_date(date));
+  const handledescription = useCallback(
+    (event) => settaskDescription(event.target.value),
+    [],
+  );
+  const handleDuedate = useCallback((date) => settaskDue_date(date), []);
 
   const validate = useCallback((values) => {
     const { taskTitle, taskDescription } = values;
@@ -61,7 +65,7 @@ const EditTask = ({ task, showTaskListScreen, fetchAllTasks }) => {
     (values) => {
       editTask(task._id, handleresponse, handleerror, values, setloading);
     },
-    [handleresponse, handleerror],
+    [task._id, handleresponse, handleerror],
   );
 
   const handletask = useCallback(() => {

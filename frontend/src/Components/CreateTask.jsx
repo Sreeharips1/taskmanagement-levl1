@@ -22,11 +22,15 @@ const CreateTask = ({ showTaskListScreen, fetchAllTasks }) => {
   const [taskDueDate, settaskDue_date] = useState();
   const [loading, setloading] = useState(false);
 
-  const handletitle = useCallback((event) => settaskTitle(event.target.value));
-  const handledescription = useCallback((event) =>
-    settaskDescription(event.target.value),
+  const handletitle = useCallback(
+    (event) => settaskTitle(event.target.value),
+    [],
   );
-  const handleDuedate = useCallback((date) => settaskDue_date(date));
+  const handledescription = useCallback(
+    (event) => settaskDescription(event.target.value),
+    [],
+  );
+  const handleDuedate = useCallback((date) => settaskDue_date(date), []);
 
   //validate
 

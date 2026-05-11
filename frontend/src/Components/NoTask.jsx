@@ -15,7 +15,7 @@ const NoTask = ({ showCreateTaskScreen }) => {
           className="btn btn-purple create-task-btn"
           onClick={showCreateTaskScreen}
         >
-          <img src={FolderWhite} />
+          <img src={FolderWhite} alt="" />
           Create New Task
         </button>
       </div>

@@ -65,17 +65,6 @@ const TaskMain = () => {
     console.error(errorMsg);
   }, []);
 
-  //delete
-  const handleResponse = useCallback(
-    (responseData) => {
-      if (responseData.success) {
-        fetchAllTasks(); // refresh task list
-        showTasklist();
-      }
-    },
-    [fetchAllTasks, showTasklist],
-  );
-
   /* =========================
      FETCH ALL TASKS
   ========================== */
@@ -86,6 +75,17 @@ const TaskMain = () => {
   useEffect(() => {
     fetchAllTasks();
   }, [fetchAllTasks]);
+
+  //delete
+  const handleResponse = useCallback(
+    (responseData) => {
+      if (responseData.success) {
+        fetchAllTasks(); // refresh task list
+        showTasklist();
+      }
+    },
+    [fetchAllTasks, showTasklist],
+  );
 
   /* =========================
      DELETE TASK
